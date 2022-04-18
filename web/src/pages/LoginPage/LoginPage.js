@@ -7,6 +7,7 @@ import {
   PasswordField,
   Submit,
   FieldError,
+  Button,
 } from '@redwoodjs/forms'
 import { useAuth } from '@redwoodjs/auth'
 import { MetaTags } from '@redwoodjs/web'
@@ -14,6 +15,7 @@ import { toast, Toaster } from '@redwoodjs/web/toast'
 import { useEffect } from 'react'
 
 const LoginPage = () => {
+  // const { isAuthenticated, logIn } = useAuth()
   const { isAuthenticated, logIn } = useAuth()
 
   useEffect(() => {
@@ -70,12 +72,12 @@ const LoginPage = () => {
                     className="rw-input"
                     errorClassName="rw-input rw-input-error"
                     ref={usernameRef}
-                    validation={{
-                      required: {
-                        value: true,
-                        message: 'Username is required',
-                      },
-                    }}
+                    // validation={{
+                    //   required: {
+                    //     value: true,
+                    //     message: 'Username is required',
+                    //   },
+                    // }}
                   />
 
                   <FieldError name="username" className="rw-field-error" />
@@ -92,12 +94,12 @@ const LoginPage = () => {
                     className="rw-input"
                     errorClassName="rw-input rw-input-error"
                     autoComplete="current-password"
-                    validation={{
-                      required: {
-                        value: true,
-                        message: 'Password is required',
-                      },
-                    }}
+                    // validation={{
+                    //   required: {
+                    //     value: true,
+                    //     message: 'Password is required',
+                    //   },
+                    // }}
                   />
 
                   <div className="rw-forgot-link">
@@ -112,8 +114,8 @@ const LoginPage = () => {
                   <FieldError name="password" className="rw-field-error" />
 
                   <div className="rw-button-group">
-                    <Submit className="rw-button rw-button-blue">
-                      Đăng nhập
+                    <Submit className="rw-button rw-button-red">
+                      Đăng nhập bằng Google
                     </Submit>
                   </div>
                 </Form>

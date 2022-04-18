@@ -7,7 +7,6 @@ import {
   PasswordField,
   Submit,
   FieldError,
-  Button,
 } from '@redwoodjs/forms'
 import { useAuth } from '@redwoodjs/auth'
 import { MetaTags } from '@redwoodjs/web'

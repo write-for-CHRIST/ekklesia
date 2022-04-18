@@ -43,14 +43,18 @@ const LoginPage = () => {
     <>
       <MetaTags title="Login" />
 
-      <main className="rw-main">
+      <main className="rw-main rw-login">
         <Toaster toastOptions={{ className: 'rw-toast', duration: 6000 }} />
         <div className="rw-scaffold rw-login-container">
+          <img src="img/logo.png" alt="Logo BTN Gia Dinh" />
+          <div className="rw-segment">
+            <h1>Quản Lý Ban Ngành </h1>
+          </div>
+
           <div className="rw-segment">
             <header className="rw-segment-header">
-              <h2 className="rw-heading rw-heading-secondary">Login</h2>
+              <h2 className="rw-heading rw-heading-secondary">Đăng nhập</h2>
             </header>
-
             <div className="rw-segment-main">
               <div className="rw-form-wrapper">
                 <Form onSubmit={onSubmit} className="rw-form-wrapper">
@@ -59,7 +63,7 @@ const LoginPage = () => {
                     className="rw-label"
                     errorClassName="rw-label rw-label-error"
                   >
-                    Username
+                    Email
                   </Label>
                   <TextField
                     name="username"
@@ -81,7 +85,7 @@ const LoginPage = () => {
                     className="rw-label"
                     errorClassName="rw-label rw-label-error"
                   >
-                    Password
+                    Mật khẩu
                   </Label>
                   <PasswordField
                     name="password"
@@ -101,25 +105,27 @@ const LoginPage = () => {
                       to={routes.forgotPassword()}
                       className="rw-forgot-link"
                     >
-                      Forgot Password?
+                      Quên mật khẩu?
                     </Link>
                   </div>
 
                   <FieldError name="password" className="rw-field-error" />
 
                   <div className="rw-button-group">
-                    <Submit className="rw-button rw-button-blue">Login</Submit>
+                    <Submit className="rw-button rw-button-blue">
+                      Đăng nhập
+                    </Submit>
                   </div>
                 </Form>
               </div>
             </div>
           </div>
-          <div className="rw-login-link">
+          {/* <div className="rw-login-link">
             <span>Don&apos;t have an account?</span>{' '}
             <Link to={routes.signup()} className="rw-link">
               Sign up!
             </Link>
-          </div>
+          </div> */}
         </div>
       </main>
     </>

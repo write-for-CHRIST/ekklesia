@@ -3,3 +3,28 @@
     margin: 20px 0;
     text-align: center;
 }
+
+.providersGroup hr::before{
+  content: "or";
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: rgb(14, 30, 37);
+    padding: 4px;
+    top: -11px;
+}
+.providersGroup hr{
+  border: 0;
+  border-top: 2px solid #e9ebeb;
+  margin: 32px 0 -1px;
+  text-align: center;
+  overflow: visible;
+}
+
+.providersGroup .rw-button-group{
+ margin-top: 0;
+}

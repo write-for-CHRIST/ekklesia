@@ -110,13 +110,20 @@ const LoginPage = () => {
                     </Link>
                   </div>
 
-                  <FieldError name="password" className="rw-field-error" />
-
                   <div className="rw-button-group">
-                    <Submit className="rw-button rw-button-red">
-                      Đăng nhập bằng Google
+                    <Submit className="rw-button rw-button-blue">
+                      Đăng nhập
                     </Submit>
                   </div>
+                  <FieldError name="password" className="rw-field-error" />
+                  {/* <div className="providersGroup">
+                    <hr className="hr"></hr>
+                    <div className="rw-button-group">
+                      <Submit className="rw-button rw-button-red">
+                        Đăng nhập bằng Google
+                      </Submit>
+                    </div>
+                  </div> */}
                 </Form>
               </div>
             </div>

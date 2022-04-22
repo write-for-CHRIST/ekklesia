@@ -28,3 +28,13 @@
 .providersGroup .rw-button-group{
  margin-top: 0;
 }
+.right-login{
+  display: flex;
+  align-items: center;
+}
+.right-login button{
+  margin-left: 10px;
+}
+.text-sm{
+  font-size: 0.875rem;
+}

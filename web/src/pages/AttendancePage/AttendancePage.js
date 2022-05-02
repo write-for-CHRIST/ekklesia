@@ -4,8 +4,8 @@ import { MetaTags } from '@redwoodjs/web'
 import 'dayjs/locale/vi'
 import { DatePicker } from '@mantine/dates'
 import { Container, Indicator } from '@mantine/core'
-import { CheckboxGroup, Checkbox, Space } from '@mantine/core'
-import { Calendar } from 'tabler-icons-react'
+import { CheckboxGroup, Checkbox, Space, Select } from '@mantine/core'
+import { Calendar, ChevronDown } from 'tabler-icons-react'
 import { useState } from 'react'
 
 const AttendancePage = () => {
@@ -13,17 +13,17 @@ const AttendancePage = () => {
 
   return (
     <>
-      <MetaTags title="Attendance" description="Attendance page" />
+      <MetaTags title="Điểm danh" description="Điểm danh" />
 
       <Container size="xs" px="xs">
-        <h1>AttendancePage</h1>
+        <h1>Điểm danh</h1>
         <DatePicker
           locale="vi"
           placeholder="Chọn ngày"
           label="Chọn ngày"
           value={value}
           onChange={onChange}
-          defaultValue={new Date()}
+          // defaultValue={new Date()}
           firstDayOfWeek="sunday"
           inputFormat="DD/MM/YYYY"
           labelFormat="DD/MM/YYYY"
@@ -43,6 +43,24 @@ const AttendancePage = () => {
             )
           }}
           required
+        />
+        <Space h="sm" />
+        <Select
+          placeholder="Hoạt động"
+          allowDeselect
+          transition="pop-top-left"
+          transitionDuration={80}
+          transitionTimingFunction="ease"
+          rightSection={<ChevronDown size={14} />}
+          rightSectionWidth={30}
+          styles={{ rightSection: { pointerEvents: 'none' } }}
+          variant="filled"
+          data={[
+            { value: '1', label: 'Nhóm Thanh Niên', disabled: true },
+            { value: '2', label: 'Học Kinh Thánh' },
+            { value: '3', label: 'Thăm Viếng' },
+            { value: '4', label: 'Tập Hát' },
+          ]}
         />
         <Space h="sm" />
 

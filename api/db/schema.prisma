@@ -20,3 +20,11 @@ model User {
   resetToken          String?
   resetTokenExpiresAt DateTime?
 }
+
+model Contact {
+  id      String  @id @default(uuid())
+  name    String?
+  email   String?
+  message String
+
+}

@@ -23,8 +23,11 @@
   },
   "packageManager": "yarn@3.2.0",
   "dependencies": {
-    "@mantine/core": "^4.1.4",
-    "@mantine/hooks": "^4.1.4",
-    "@mantine/next": "^4.1.4"
+    "@mantine/core": "^4.2.2",
+    "@mantine/dates": "^4.2.2",
+    "@mantine/hooks": "^4.2.2",
+    "@mantine/next": "^4.2.2",
+    "dayjs": "^1.11.1",
+    "tabler-icons-react": "^1.47.0"
   }
 }

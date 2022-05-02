@@ -933,7 +933,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-jsx@npm:^7.0.0, @babel/plugin-syntax-jsx@npm:^7.12.13, @babel/plugin-syntax-jsx@npm:^7.16.7":
+"@babel/plugin-syntax-jsx@npm:^7.0.0, @babel/plugin-syntax-jsx@npm:^7.16.7":
   version: 7.16.7
   resolution: "@babel/plugin-syntax-jsx@npm:7.16.7"
   dependencies:
@@ -1886,25 +1886,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/babel-plugin@npm:^11.7.1":
-  version: 11.9.2
-  resolution: "@emotion/babel-plugin@npm:11.9.2"
+"@emotion/cache@npm:11.7.1, @emotion/cache@npm:^11.7.1":
+  version: 11.7.1
+  resolution: "@emotion/cache@npm:11.7.1"
   dependencies:
-    "@babel/helper-module-imports": ^7.12.13
-    "@babel/plugin-syntax-jsx": ^7.12.13
-    "@babel/runtime": ^7.13.10
-    "@emotion/hash": ^0.8.0
-    "@emotion/memoize": ^0.7.5
-    "@emotion/serialize": ^1.0.2
-    babel-plugin-macros: ^2.6.1
-    convert-source-map: ^1.5.0
-    escape-string-regexp: ^4.0.0
-    find-root: ^1.1.0
-    source-map: ^0.5.7
+    "@emotion/memoize": ^0.7.4
+    "@emotion/sheet": ^1.1.0
+    "@emotion/utils": ^1.0.0
+    "@emotion/weak-memoize": ^0.2.5
     stylis: 4.0.13
-  peerDependencies:
-    "@babel/core": ^7.0.0
-  checksum: 337d683a657f14fd9f30a50561794e9b7b986c4dfa3de4747defb38f7f352eedae56bf73b1ff6e315f05e938b7e6c11e100c3a1485722d9bcdc4018f32b9b9a1
+  checksum: d7bf7827e683ba773a503fc9718effc66b1a0a069bd1c16546da178bc0e72e49706d66459e8d3ef13370f4a82e3078b9cf21991ceef6aecc1095e0afdfd737c6
   languageName: node
   linkType: hard
 
@@ -1917,19 +1908,6 @@ __metadata:
     "@emotion/utils": 0.11.3
     "@emotion/weak-memoize": 0.2.5
   checksum: df109408fd463f243d6df48b4a28b410502f4506290875d0b9e07dc654638f71167d2b418b26f7e1c3d165cc44d507f476f4ff88652e7390c6ccb33aa04f8799
-  languageName: node
-  linkType: hard
-
-"@emotion/cache@npm:^11.7.1":
-  version: 11.7.1
-  resolution: "@emotion/cache@npm:11.7.1"
-  dependencies:
-    "@emotion/memoize": ^0.7.4
-    "@emotion/sheet": ^1.1.0
-    "@emotion/utils": ^1.0.0
-    "@emotion/weak-memoize": ^0.2.5
-    stylis: 4.0.13
-  checksum: d7bf7827e683ba773a503fc9718effc66b1a0a069bd1c16546da178bc0e72e49706d66459e8d3ef13370f4a82e3078b9cf21991ceef6aecc1095e0afdfd737c6
   languageName: node
   linkType: hard
 
@@ -1983,22 +1961,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/memoize@npm:^0.7.4, @emotion/memoize@npm:^0.7.5":
+"@emotion/memoize@npm:^0.7.4":
   version: 0.7.5
   resolution: "@emotion/memoize@npm:0.7.5"
   checksum: 28d061ec9fb9b8c495d58b4e2dcc62207d75d4e8d8f4e6a0b42342d6e7c649d41461e807363d1a0a2c33d2235f6ee59dd6394fbec88b7da65e3d5852fc34387e
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.7.1":
-  version: 11.9.0
-  resolution: "@emotion/react@npm:11.9.0"
+"@emotion/react@npm:11.7.1":
+  version: 11.7.1
+  resolution: "@emotion/react@npm:11.7.1"
   dependencies:
     "@babel/runtime": ^7.13.10
-    "@emotion/babel-plugin": ^11.7.1
     "@emotion/cache": ^11.7.1
-    "@emotion/serialize": ^1.0.3
-    "@emotion/utils": ^1.1.0
+    "@emotion/serialize": ^1.0.2
+    "@emotion/sheet": ^1.1.0
+    "@emotion/utils": ^1.0.0
     "@emotion/weak-memoize": ^0.2.5
     hoist-non-react-statics: ^3.3.1
   peerDependencies:
@@ -2009,7 +1987,20 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 97e3a17c73d46c6379e09e8c8bbd01d2e829a7db22099412afb60377779fed9c9d37589c0b74998fe510f8d52f2520e834b6836237701fcb9513165ef18a76b2
+  checksum: 4be16c730d887dd27d3f0021b28411154d0e72b4b711973516e0a43a8fbe4008162faf083b4017d7d3edbf2ad968365cf523453705c7197e2bab2f45bfc2370c
+  languageName: node
+  linkType: hard
+
+"@emotion/serialize@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@emotion/serialize@npm:1.0.2"
+  dependencies:
+    "@emotion/hash": ^0.8.0
+    "@emotion/memoize": ^0.7.4
+    "@emotion/unitless": ^0.7.5
+    "@emotion/utils": ^1.0.0
+    csstype: ^3.0.2
+  checksum: b29dbf33c1801d2aa039d355fa87bb921a8dd4dcecd9ef8cea0c1d7796d39ea137c913824b3173c7d3acd65ff2bb8bc6912095690a266c79696f5528c1a1c509
   languageName: node
   linkType: hard
 
@@ -2026,7 +2017,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/serialize@npm:^1.0.2, @emotion/serialize@npm:^1.0.3":
+"@emotion/serialize@npm:^1.0.2":
   version: 1.0.3
   resolution: "@emotion/serialize@npm:1.0.3"
   dependencies:
@@ -2039,7 +2030,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/server@npm:^11.4.0":
+"@emotion/server@npm:11.4.0":
   version: 11.4.0
   resolution: "@emotion/server@npm:11.4.0"
   dependencies:
@@ -2119,7 +2110,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/utils@npm:^1.0.0, @emotion/utils@npm:^1.1.0":
+"@emotion/utils@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@emotion/utils@npm:1.0.0"
+  checksum: 52b74082bccfc0d16e8c2c176c628a3cfd83a3d6261fbb201c7012249822840ae69dca1c6f99ba8fafee8cc80cf1a0868bb91b9f792c25e3f2d9e69afc92d71e
+  languageName: node
+  linkType: hard
+
+"@emotion/utils@npm:^1.0.0":
   version: 1.1.0
   resolution: "@emotion/utils@npm:1.1.0"
   checksum: 4659bb4c447fa8c5303fae5cae829c22ce29ba0d9e0a8fb1f3f33b8bfd9304a435af327abccbf133040eeb1771a572fad3e68decd267e26459b8ea6ea1f2ba68
@@ -3748,78 +3746,90 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:^4.1.4":
-  version: 4.1.4
-  resolution: "@mantine/core@npm:4.1.4"
+"@mantine/core@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "@mantine/core@npm:4.2.2"
   dependencies:
-    "@mantine/styles": 4.1.4
+    "@mantine/styles": 4.2.2
     "@popperjs/core": ^2.9.3
     "@radix-ui/react-scroll-area": ^0.1.1
     react-popper: ^2.2.5
     react-textarea-autosize: ^8.3.2
   peerDependencies:
-    "@mantine/hooks": 4.1.4
+    "@mantine/hooks": 4.2.2
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: dfc3fef193017fc3b79659912fa5d32cbeb3dfca3b340ef1ae6408e8a43e98b2998a8d8c37ecffd68f7035e04fd0665c0b868e7f521eb7617b03645c6750b9a6
+  checksum: 3d05971529985f11f98cc3fa86eb0be13446c888874cf9311968fbe2fe280a9fadc3321be367e40f77869fb8f33448b90f9c7f77b6b60a9a365cec31093f4b77
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:^4.1.4":
-  version: 4.1.4
-  resolution: "@mantine/hooks@npm:4.1.4"
+"@mantine/dates@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "@mantine/dates@npm:4.2.2"
+  peerDependencies:
+    "@mantine/core": 4.2.2
+    "@mantine/hooks": 4.2.2
+    dayjs: ^1.10.5
+    react: ">=16.8.0"
+  checksum: 9bf43964f73cba4c532a451beebced89b166ee29ecf9c52b2f269b4768c08789c509dccebdafe7838b0e74f5baf6437f391af5d16097d5c45f5a215d53c02001
+  languageName: node
+  linkType: hard
+
+"@mantine/hooks@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "@mantine/hooks@npm:4.2.2"
   peerDependencies:
     react: ">=16.8.0"
-  checksum: 53fc60135d9641967168566479a643206756de611ce2382eff88530093aec28816917671f1d0bee2578024e1ff3e5ef9f393ebc6c2f4af84ed8707a36f4951f8
+  checksum: 798c9c364beda0edecf7ba75c23894d718789b9c1f6f1752b2a180c934f4549113b644d2635fcf2956cbfd0cde12083f6816712a4a8a8199393d84946633ed04
   languageName: node
   linkType: hard
 
-"@mantine/next@npm:^4.1.4":
-  version: 4.1.4
-  resolution: "@mantine/next@npm:4.1.4"
+"@mantine/next@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "@mantine/next@npm:4.2.2"
   dependencies:
-    "@mantine/ssr": 4.1.4
+    "@mantine/ssr": 4.2.2
   peerDependencies:
     next: "*"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 96a53496fb45d6bb521cedb935e3447ffbe52e930f81788e47405205584dd83fab3dfcadf660400b69bd93fdc00fc83b94ed6628ca3895ec21426ca5537c28a2
+  checksum: 8a63ee841f1a3485f87ce4de36f3ee57957963267876b3a8dda18ab435d7047576da0dab59963aa8df44730f04e7b00df9eced960fa5d334374defcfdb3c8aba
   languageName: node
   linkType: hard
 
-"@mantine/ssr@npm:4.1.4":
-  version: 4.1.4
-  resolution: "@mantine/ssr@npm:4.1.4"
+"@mantine/ssr@npm:4.2.2":
+  version: 4.2.2
+  resolution: "@mantine/ssr@npm:4.2.2"
   dependencies:
-    "@emotion/cache": ^11.7.1
-    "@emotion/react": ^11.7.1
-    "@emotion/serialize": ^1.0.2
-    "@emotion/server": ^11.4.0
-    "@emotion/utils": ^1.0.0
-    "@mantine/styles": 4.1.4
-    csstype: ^3.0.9
-    html-react-parser: ^1.3.0
+    "@emotion/cache": 11.7.1
+    "@emotion/react": 11.7.1
+    "@emotion/serialize": 1.0.2
+    "@emotion/server": 11.4.0
+    "@emotion/utils": 1.0.0
+    "@mantine/styles": 4.2.2
+    csstype: 3.0.9
+    html-react-parser: 1.3.0
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 9d6d200a6bc511a3ae3d4d332ab27f59e07e1b5990e3a30a5fcc1d988ee91a7ade28ec0068026477f62f410dffaaa3d627e7a849c73879853cd58445eefd2c2b
+  checksum: a8339da106bb61a95bfae0fb92c94e2d72c4e4cbe751e746f54057baa99992e6f8df027097bbd0576820c1c80deae955b369415c913bc9a14a59327b6fff6f07
   languageName: node
   linkType: hard
 
-"@mantine/styles@npm:4.1.4":
-  version: 4.1.4
-  resolution: "@mantine/styles@npm:4.1.4"
+"@mantine/styles@npm:4.2.2":
+  version: 4.2.2
+  resolution: "@mantine/styles@npm:4.2.2"
   dependencies:
-    "@emotion/cache": ^11.7.1
-    "@emotion/react": ^11.7.1
-    "@emotion/serialize": ^1.0.2
-    "@emotion/utils": ^1.0.0
+    "@emotion/cache": 11.7.1
+    "@emotion/react": 11.7.1
+    "@emotion/serialize": 1.0.2
+    "@emotion/utils": 1.0.0
     clsx: ^1.1.1
-    csstype: ^3.0.9
+    csstype: 3.0.9
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 478289d10ee377b3ea7d3eaca91f8e733af4b53f856eecfc614be6706054426296643694b0477452c4199181510fc5e3dec05e17759bfb58ec92790c2ed6aa77
+  checksum: 0cc1a78b1258909950fb712880469abaad936da5d56e8cd0f52cd0be7361e31fa035253c9b5f3774731d53e87ab22a1cb055471cd3a0cab819fb26402d74eebc
   languageName: node
   linkType: hard
 
@@ -8464,7 +8474,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-macros@npm:^2.0.0, babel-plugin-macros@npm:^2.6.1, babel-plugin-macros@npm:^2.8.0":
+"babel-plugin-macros@npm:^2.0.0, babel-plugin-macros@npm:^2.8.0":
   version: 2.8.0
   resolution: "babel-plugin-macros@npm:2.8.0"
   dependencies:
@@ -10788,6 +10798,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"csstype@npm:3.0.9":
+  version: 3.0.9
+  resolution: "csstype@npm:3.0.9"
+  checksum: bca0719a6248445cbad0ba9a45911a0bdcf1ab3b08ae8ce1d7766f9d82d7ce3c5cbb1a542926d52958368c1db290baed50d6c9672a7e5fcca37eba37a28f33a3
+  languageName: node
+  linkType: hard
+
 "csstype@npm:^2.5.7":
   version: 2.6.20
   resolution: "csstype@npm:2.6.20"
@@ -10795,7 +10812,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.0.2, csstype@npm:^3.0.9":
+"csstype@npm:^3.0.2":
   version: 3.0.11
   resolution: "csstype@npm:3.0.11"
   checksum: 20a89e20978ce0a9e0e400582fcd4e6ca95fe11a07b2941695218704e51b428558c3016df8c9e4a9e2d7626ec8e0f7cc10126d67b32fc770d4daf7fae9c81b62
@@ -10859,6 +10876,13 @@ __metadata:
   version: 2.28.0
   resolution: "date-fns@npm:2.28.0"
   checksum: ecdacd36326e7f5f8c4f1e78ae931a8997109f1c841f5163053b866585ca899521b0e7a114eeb48a9fe5135a550787bd4bbd8baa321cded0b4d823f847889a80
+  languageName: node
+  linkType: hard
+
+"dayjs@npm:^1.11.1":
+  version: 1.11.1
+  resolution: "dayjs@npm:1.11.1"
+  checksum: 02b4e9b04320806ea618e334a67643808af0f6a932374924b35674ea39490cd18ceb8b5f2a74cf848ee496176f961eed86cff39022a7e72cac584b215e022aef
   languageName: node
   linkType: hard
 
@@ -11335,7 +11359,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domhandler@npm:4.3.1, domhandler@npm:^4.0.0, domhandler@npm:^4.2.0, domhandler@npm:^4.2.2, domhandler@npm:^4.3.1":
+"domhandler@npm:4.2.2":
+  version: 4.2.2
+  resolution: "domhandler@npm:4.2.2"
+  dependencies:
+    domelementtype: ^2.2.0
+  checksum: 63f44711103685c85f85d00dda443862c8a3d40146d331cc8e6a69dfe8f933ad675a8949e43f30ffdc64d1440ecd2b94abdb246171fe49da7736ddf342c57ac6
+  languageName: node
+  linkType: hard
+
+"domhandler@npm:^4.0.0, domhandler@npm:^4.2.0, domhandler@npm:^4.3.1":
   version: 4.3.1
   resolution: "domhandler@npm:4.3.1"
   dependencies:
@@ -11696,13 +11729,6 @@ __metadata:
   version: 2.2.0
   resolution: "entities@npm:2.2.0"
   checksum: 7fba6af1f116300d2ba1c5673fc218af1961b20908638391b4e1e6d5850314ee2ac3ec22d741b3a8060479911c99305164aed19b6254bde75e7e6b1b2c3f3aa3
-  languageName: node
-  linkType: hard
-
-"entities@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "entities@npm:3.0.1"
-  checksum: 2d93f48fd86de0b0ed8ee34456aa47b4e74a916a5e663cfcc7048302e2c7e932002926daf5a00ad6d5691e3c90673a15d413704d86d7e1b9532f9bc00d975590
   languageName: node
   linkType: hard
 
@@ -14692,13 +14718,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-dom-parser@npm:1.2.0":
-  version: 1.2.0
-  resolution: "html-dom-parser@npm:1.2.0"
+"html-dom-parser@npm:1.0.2":
+  version: 1.0.2
+  resolution: "html-dom-parser@npm:1.0.2"
   dependencies:
-    domhandler: 4.3.1
-    htmlparser2: 7.2.0
-  checksum: 46ed494428cbaedeafffe944e8648f202b9ed851a145b114d5c770dd9a7a80607dcf12e816c197db7a30a009df03aef16ca134ad54f1db9275006878dd2a6910
+    domhandler: 4.2.2
+    htmlparser2: 6.1.0
+  checksum: 5d3956d9f4477ccae9b1e39c300a7870308235892d7b981d639bb569fbc2ed6a00b62d6082112aa229490c3109baae1ca5467c0bed0effd5ccddcd6ae6462d7b
   languageName: node
   linkType: hard
 
@@ -14759,17 +14785,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-react-parser@npm:^1.3.0":
-  version: 1.4.11
-  resolution: "html-react-parser@npm:1.4.11"
+"html-react-parser@npm:1.3.0":
+  version: 1.3.0
+  resolution: "html-react-parser@npm:1.3.0"
   dependencies:
-    domhandler: 4.3.1
-    html-dom-parser: 1.2.0
+    domhandler: 4.2.2
+    html-dom-parser: 1.0.2
     react-property: 2.0.0
     style-to-js: 1.1.0
   peerDependencies:
-    react: 0.14 || 15 || 16 || 17 || 18
-  checksum: 843d891f6654513d2a73c9f6ad81fa119c6bbf228a501cc011ffdee1cf7a6dd6d6893d1154c5af4cf8b92e6c97dc3e10d3a25e4973f2771cdf4390c946046c3b
+    react: 0.14 || 15 || 16 || 17
+  checksum: 0cdd722ee1b58664f0f28a9cf68dc5910d4691be9c33d46a1be9161a45bccb357c8676c18ffe69c22a8262cf664bbcb253f8418938d5f9df52dabf69d8a3e9b1
   languageName: node
   linkType: hard
 
@@ -14829,19 +14855,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"htmlparser2@npm:7.2.0":
-  version: 7.2.0
-  resolution: "htmlparser2@npm:7.2.0"
-  dependencies:
-    domelementtype: ^2.0.1
-    domhandler: ^4.2.2
-    domutils: ^2.8.0
-    entities: ^3.0.1
-  checksum: 7e1fa7f3b2635f2a1c5272765e25aab33b241d84a43e9d27f28a0b7166b51a8025dec40a6a29af38d6a698a2f1d2983cb43e5c61d4e07ec5aa9df672a7460e16
-  languageName: node
-  linkType: hard
-
-"htmlparser2@npm:^6.1.0":
+"htmlparser2@npm:6.1.0, htmlparser2@npm:^6.1.0":
   version: 6.1.0
   resolution: "htmlparser2@npm:6.1.0"
   dependencies:
@@ -21618,10 +21632,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@mantine/core": ^4.1.4
-    "@mantine/hooks": ^4.1.4
-    "@mantine/next": ^4.1.4
+    "@mantine/core": ^4.2.2
+    "@mantine/dates": ^4.2.2
+    "@mantine/hooks": ^4.2.2
+    "@mantine/next": ^4.2.2
     "@redwoodjs/core": 1.0.2
+    dayjs: ^1.11.1
+    tabler-icons-react: ^1.47.0
   languageName: unknown
   linkType: soft
 
@@ -23174,6 +23191,15 @@ __metadata:
     systeminformation: lib/cli.js
   checksum: 0018d6b56f16518e98830a290a771af8378abed0415e94b41599add1c595af668100e2bd4064801f6d73495698d8f2bfde50227e91acd753fef714be960cf5ed
   conditions: (os=darwin | os=linux | os=win32 | os=freebsd | os=openbsd | os=netbsd | os=sunos | os=android)
+  languageName: node
+  linkType: hard
+
+"tabler-icons-react@npm:^1.47.0":
+  version: 1.47.0
+  resolution: "tabler-icons-react@npm:1.47.0"
+  peerDependencies:
+    react: ">= 16.8.0"
+  checksum: 52c35de9e0203b463c72ea6b4d0b9f1be0282417ca02adfabf09b69f75c9ed3f10f771924087028c8184f25cdf642dd90bd10260cb91fa4500c46cccefa1b87c
   languageName: node
   linkType: hard
 

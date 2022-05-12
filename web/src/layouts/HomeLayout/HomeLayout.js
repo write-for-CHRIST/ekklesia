@@ -58,7 +58,7 @@ const HomeLayout = ({ children }) => {
               {/* Grow section will take all available space that is not taken by first and last sections */}
               <Navbar.Section grow mt="md">
                 <div className="rw-heading">
-                  <Link className="rw-link">
+                  <Link to={routes.profiles()} className="rw-link">
                     <UnstyledButton
                       sx={(theme) => ({
                         display: 'block',
@@ -87,34 +87,36 @@ const HomeLayout = ({ children }) => {
                       </Group>
                     </UnstyledButton>
                   </Link>
-
-                  <UnstyledButton
-                    sx={(theme) => ({
-                      display: 'block',
-                      width: '100%',
-                      padding: theme.spacing.xs,
-                      borderRadius: theme.radius.sm,
-                      color:
-                        theme.colorScheme === 'dark'
-                          ? theme.colors.dark[0]
-                          : theme.black,
-
-                      '&:hover': {
-                        backgroundColor:
+                  <Link to={routes.groups()} className="rw-link">
+                    <UnstyledButton
+                      sx={(theme) => ({
+                        display: 'block',
+                        width: '100%',
+                        padding: theme.spacing.xs,
+                        borderRadius: theme.radius.sm,
+                        color:
                           theme.colorScheme === 'dark'
-                            ? theme.colors.dark[6]
-                            : theme.colors.gray[0],
-                      },
-                    })}
-                  >
-                    <Group>
-                      <ThemeIcon color="violet" variant="light">
-                        <Book size={16} />
-                      </ThemeIcon>
+                            ? theme.colors.dark[0]
+                            : theme.black,
 
-                      <Text size="sm">Danh sách nhóm</Text>
-                    </Group>
-                  </UnstyledButton>
+                        '&:hover': {
+                          backgroundColor:
+                            theme.colorScheme === 'dark'
+                              ? theme.colors.dark[6]
+                              : theme.colors.gray[0],
+                        },
+                      })}
+                    >
+                      <Group>
+                        <ThemeIcon color="violet" variant="light">
+                          <Book size={16} />
+                        </ThemeIcon>
+
+                        <Text size="sm">Danh sách nhóm</Text>
+                      </Group>
+                    </UnstyledButton>
+                  </Link>
+
                   <UnstyledButton
                     sx={(theme) => ({
                       display: 'block',
